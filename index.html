@@ -6,9 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
     </head>
+    <style>
+        body {
+            margin: 0;
+        }
+        a {
+            min-height: 10px;
+        }
+        iframe {
+            display: block; /* iframes are inline by default */
+            border: none; /* reset default border */
+            height: calc(100vh - 10px);
+            width: 100vw;
+        }
+    </style>
     <body>
-        <a href="/project-a" target="icontent"> Project A </a>
-        <a href="/project-b" target="icontent"> Project B </a>
-        <iframe id="icontent" name="icontent" src="/project-a" scrolling="no" allowTransparency="true"></iframe>
+        <a href="/github-pages-test/project-a" target="icontent"> Project A </a>
+        <a href="/github-pages-test/project-b" target="icontent"> Project B </a>
+        <iframe id="icontent" name="icontent" src="/github-pages-test/project-a" scrolling="no" allowTransparency="true"></iframe>
     </body>
 </html>
