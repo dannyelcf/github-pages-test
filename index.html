@@ -7,16 +7,20 @@
         <title>Document</title>
     </head>
     <style>
+        :root {
+          --header-height: 20px;
+        }
         body {
             margin: 0;
         }
         a {
-            min-height: 10px;
+            min-height: var(--header-height);
+            display: inline-block;
         }
         iframe {
             display: block; /* iframes are inline by default */
             border: none; /* reset default border */
-            height: calc(100vh - 10px);
+            height: calc(100vh - var(--header-height));
             width: 100vw;
         }
     </style>
